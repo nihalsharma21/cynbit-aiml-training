@@ -1,19 +1,14 @@
 import pandas as pd
 
-# Sample dataset with null values
 data = {
-    "Name": ["Nihal", "Rahul", "Priya"],
-    "Age": [20, None, 19],
-    "Grade": ["A", "B", "A"]
+    "Name": ["Ram", "Rahul", "Aman", "Priya"],
+    "Age": [22, None, 19, 23],
+    "Marks": [78, 93, 87, None]
 }
 
 df = pd.DataFrame(data)
-
-print("Original Dataset:")
+print("Original Dataset: ")
 print(df)
-
-# Remove null values
 df_clean = df.dropna()
-
-print("\nDataset After Removing Null Values:")
+print("Dataset After Removing Null Values:")
 print(df_clean)
